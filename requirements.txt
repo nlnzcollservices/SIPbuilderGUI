@@ -1,0 +1,3 @@
+mets-dnx==0.1.16
+PySimpleGUI==4.47.0
+rosetta-sip-factory==0.1.9
