@@ -1,14 +1,16 @@
-import PySimpleGUI as sg
 import os
+import PySimpleGUI as sg
 from pathlib import Path
-
 from datetime import datetime as dt
 from rosetta_sip_factory.sip_builder import build_sip_from_json, build_single_file_sip, build_sip
 
 
-
 def my_gui():
-
+	"""
+	This function running form in separate window and collect values
+	Returns:
+		values(dict) - dictionary of form values
+	"""
 	form = sg.FlexForm('Simple SIP form')
 	value_list  = ["WebHarvestIE","OneOffIE","AudioIE","PeriodicIE","VideoIE","HTMLSerialIE","HTMLMonoIE","UnpublishedIE",""]
 	layout1 = [
@@ -38,26 +40,19 @@ def my_gui():
 			[sg.Radio('User   ', "RADIO4", default=False,key='user'), sg.InputText('',key = 'username',size=(20, 1))]
 			]
 	tabgrp = [[sg.TabGroup([[sg.Tab('Main details', layout1, border_width =10),
-               sg.Tab('Web and User', layout2,title_color='Blue')]],
+               sg.Tab('Web and User', layout2)]],
  					tab_location='centertop', border_width=5), sg.Button('Submit')]]  
         
-	#Define Window
 	window =sg.Window("SIP GUI",tabgrp)
-	#Read  values entered by user
 	event,values=window.read()
-	#access all the values and if selected add them to a string
 	window.close() 
-	print(values)  
-
-	# window=sg.Window('SIP Maker', layout1,grab_anywhere=True)
-
-	# button, values = window.Read()
-
-	# window.Close() # added to fix downstream problem
 	return values
-	#{'alma': True, 'alma_mms': '999999999999999', 'tiaki': False, 'tiaki_emu': '', 'dc_title': 'my title test1', 'sip_title': 'my_sip_title_test1', 'entity_type': ['HTMLMonoIE'], 'policy_id': '100', 0: True, 'filename': 'D:/5427e475-120e-4bcf-9f26-b15362c0a7c6.pdf', 1: False, 'foldername': '', 'output_dir': 'D:/', 'if_web': False, 'webrecorder': True, 'ArchiveIt': False, 'harvest_date': '25/11/2021 15:41:55', 'seed_url': 'https://'}
-def main():
 
+def main():
+	"""This function is parsing dictionary of values and direct to either build_single_file_sip 
+	or build_sip rosetta_sip_factory method with appropriate METS data.
+	It does not support build_sip_from_json method and setting different labels.
+	It support Alma and Tiaki, Web archives and other materials."""
 	values = my_gui()
 	if "alma" in values.keys():
 		mms_id = values["alma_mms"]
@@ -69,16 +64,13 @@ def main():
 		filename = values["filename"]
 		foldername = None
 	elif values["fold_flag"]:
-		print("here0")
 		foldername = values["foldername"]
 		filename = None
 	entity = values["entity_type"][0]
 	access = values["access"]
 	dc_title = values["dc_title"]
 	sip_title = values["sip_title"]
-	print(values["output_dir"])
 	output_dir = Path(values["output_dir"],sip_title)
-	print(output_dir)
 	if values["if_web"]== False:
 		year = values["year"]
 		month = values["month"]
@@ -124,20 +116,14 @@ def main():
 		kwargs['cms'] = [{'system': 'emu','recordId':emu}]
 	if values["if_web"]:
 		kwargs["webHarvesting"]= [{"primarySeedURL":seed_url,"harvestDate":harvest_date,"WCTIdentifier":harvester}]
-
 	if filename:
-
 		kwargs["filepath"] = filename
 		build_single_file_sip(**kwargs)
-
-
 	elif foldername:
-		print("here")
 		kwargs["input_dir"]  = foldername
 		kwargs["pres_master_dir"]=foldername
-		print(kwargs)
 		build_sip(**kwargs)
-		print("Done")
+	print("SIP was created in  ",output_dir)
 
 if __name__ == '__main__':
 	main()
