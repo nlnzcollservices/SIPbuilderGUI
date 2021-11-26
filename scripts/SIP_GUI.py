@@ -42,7 +42,7 @@ def my_gui():
  					tab_location='centertop', border_width=5), sg.Button('Submit')]]  
         
 	#Define Window
-	window =sg.Window("Tabs",tabgrp)
+	window =sg.Window("SIP GUI",tabgrp)
 	#Read  values entered by user
 	event,values=window.read()
 	#access all the values and if selected add them to a string
