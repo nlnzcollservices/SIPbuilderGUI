@@ -67,7 +67,8 @@ Used for building SIPs for Web archives or specifying the user or project name i
 
 ### Finish
 
-Check the form before pressing the “submit” button. From either tabs  the window will disappear and script will give you the message “SIP was created in ”   and show the folder with your SIP.
+Check the form before pressing the “Create SIP” button. From either tabs  the script will give you the message “SIP was created in ”   and show the folder with your SIP.
+After this message you can change the data you entered in the form and submit new form for new SIP. 
 Check the mets.xml file for metadata you entered and when the SIP is ready:
 Place it to:
  - Rosetta automated folder for production or
