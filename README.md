@@ -36,6 +36,7 @@ The default setting is Alma you can switch the radio button for Tiaki.
 Enter your system record ID number in the corresponding field.
 2.	DC title:
  Will be displayed in the dc.xml.
+ It will be displayed in the report and will not be used further.
 3.	SIP title:
 Will be displayed as name of your SIP folder.
 4.	Entity type:
