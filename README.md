@@ -56,16 +56,21 @@ Used for non web-archive publications – It you are creating a one-time IEs or 
 
 ### “Web and User” tab fields description:
 Used for building SIPs for Web archives or specifying the user or project name in METS.  
+
 1.	Web Archive – should be ticked! if you building a SIP for a web archive
 2.	Harvest date – should be entered in the format as in example (Example shows time when app was run)
 3.	Seed url – seed url for your web archive.
 4.	Use this filed – should be ticked if you would like to specify user or project in METS
 5.	If it is ticked please switch the radio button to your option and enter your username or project name in corresponding text field.
+
 Check the form before pressing the “submit” button. From either tabs  the window will disappear and script will give you the message “SIP was created in ”   and show the folder with your SIP.
 Check the mets.xml file for metadata you entered and when the SIP is ready:
--	Place it to a Rosetta automated folder for production.
--	Or to the Rosetta UAT folder and contact the PRC team to arrange the Rosetta ingest job.
+Place it to:
+ - Rosetta automated folder for production or
+ - Rosetta UAT folder and contact the PRC team to arrange the Rosetta ingest job.
+
 Done!
+
 ## 	Errors and notes:
 ***
  - Object identifier, entity type, input (either file or folder) and output folder are mandatory.
