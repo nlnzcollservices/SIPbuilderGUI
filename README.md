@@ -78,9 +78,10 @@ Done!
 
 ## 	Errors and notes:
 ***
- - Object identifier, entity type, input (either file or folder) and output folder are mandatory.
+- It is important to be sure that input and output folders from the first tab a different.
+- Object identifier, entity type, input (either file or folder) and output folder are mandatory.
 If you miss one of them the script will not build SIP and give you a message.
- - Object identifier, entity type, sip title, DC title, policy id will be kept the same for next submission while the window is open. However, path to source and output should be chosen again.
+- Object identifier, entity type, sip title, DC title, policy id will be kept the same for next submission while the window is open. However, path to source and output should be chosen again.
 
 
 
