@@ -30,7 +30,7 @@ It will open the submission form.
 
 ![SIP_builder1](/documentation/SIP_builder1.PNG)
 
-This data populates the dc and mets.xml files.
+This data populates the dc.xml and mets.xml files.
 1.	Library system:
 The default setting is Alma you can switch the radio button for Tiaki.
 Enter your system record ID number in the corresponding field.
