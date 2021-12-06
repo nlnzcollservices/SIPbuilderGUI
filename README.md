@@ -41,8 +41,8 @@ value_list  = ["WebHarvestIE","OneOffIE","AudioIE","PeriodicIE",
 And add your entity type inside squared brackets, after coma and in quotes, save and it will appear the next time the app is run.
 5. Policy ID – policy rights access code - change to 100, 200,300,400 as required
 6. File or Folder:
-If  your SIP will have one file use “Single file” radio button and select your file using the “FileBrowse” button
-If your SIP will have multiple files in a folder switch the radio button to “folder” and use  “FolderBrowse” button to select the folder
+- If  your SIP will have one file use “Single file” radio button and select your file using the “FileBrowse” button
+- If your SIP will have multiple files in a folder switch the radio button to “folder” and use  “FolderBrowse” button to select the folder
 7. Output folder:
 Use the “FolderBrowse” button to select the folder where you want your SIP to be built.
 8. Designation fields, for serial publications – It you are creating a one-time IEs or a web archives these field can be empty and will be ignored.
