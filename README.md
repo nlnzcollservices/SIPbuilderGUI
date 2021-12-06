@@ -1,5 +1,5 @@
 # SIPbuilderGUI
-1. [Tnstallation](#installation)
+1. [Installation](#installation)
 2. [Deploying](#tdeploying)
 3. [Errors and Notes](#errors-and-notes)
 ## Instalation
@@ -24,6 +24,7 @@ pip install -r requirements.txt
 
 To run the app just go to  the “script” folder and run the “SIP_GUI.py” script
 It will open the submission form.
+
 ![SIP_builder1](/documentation/SIP_builder1.png)
 
 
