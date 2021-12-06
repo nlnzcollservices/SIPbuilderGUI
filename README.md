@@ -27,9 +27,9 @@ It will open the submission form.
 
 ![SIP_builder1](/documentation/SIP_builder1.PNG)
 
-###“Main details” tab fields description:
+### “Main details” tab fields description:
 This data populates the dc and mets.xml files.
-1.Library system:
+1. Library system:
 The default setting is Alma you can switch the radio button for Tiaki.
 Enter your system record ID number in the corresponding field.
 2. DC title will be displayed in the dc.xml.
@@ -45,9 +45,9 @@ And add your entity type inside squared brackets, after coma and in quotes, save
 6. File or Folder:
 If  your SIP will have one file use “Single file” radio button and select your file using the “FileBrowse” button
 If your SIP will have multiple files in a folder switch the radio button to “folder” and use  “FolderBrowse” button to select the folder
-7.Output folder:
+7. Output folder:
 Use the “FolderBrowse” button to select the folder where you want your SIP to be built.
-8.Designation fields, for serial publications – It you are creating a one-time IEs or a web archives these field can be empty and will be ignored.
+8. Designation fields, for serial publications – It you are creating a one-time IEs or a web archives these field can be empty and will be ignored.
 
 
 
