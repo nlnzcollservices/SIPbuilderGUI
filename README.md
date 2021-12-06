@@ -30,12 +30,13 @@ It will open the submission form.
 
 ![SIP_builder1](/documentation/SIP_builder1.PNG)
 
-This data populates the dc and mets.xml files.
+This data populates the dc.xml and mets.xml files.
 1.	Library system:
 The default setting is Alma you can switch the radio button for Tiaki.
 Enter your system record ID number in the corresponding field.
 2.	DC title:
  Will be displayed in the dc.xml.
+ It will be displayed in the report and will not be used further.
 3.	SIP title:
 Will be displayed as name of your SIP folder.
 4.	Entity type:
@@ -54,7 +55,7 @@ Use the “FolderBrowse” button to select the folder where you want your SIP t
 Used for non web-archive publications – It you are creating a one-time IEs or a web archives these field can be empty and will be ignored.
 
 
-![SIP_builder1](/documentation/SIP_builder1.PNG)
+![SIP_builder1](/documentation/SIP_builder2.PNG)
 
 ### “Web and User” tab fields description:
 Used for building SIPs for Web archives or specifying the user or project name in METS.  
