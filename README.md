@@ -54,7 +54,7 @@ Use the “FolderBrowse” button to select the folder where you want your SIP t
 Used for non web-archive publications – It you are creating a one-time IEs or a web archives these field can be empty and will be ignored.
 
 
-![SIP_builder1](/documentation/SIP_builder1.PNG)
+![SIP_builder1](/documentation/SIP_builder2.PNG)
 
 ### “Web and User” tab fields description:
 Used for building SIPs for Web archives or specifying the user or project name in METS.  
