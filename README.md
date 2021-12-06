@@ -59,7 +59,7 @@ Used for non web-archive publications – It you are creating a one-time IEs or 
 ### “Web and User” tab fields description:
 Used for building SIPs for Web archives or specifying the user or project name in METS.  
 
-1.	Web Archive – should be ticked! if you building a SIP for a web archive
+1.	Web Archive – should be ticked! if you building a SIP for a web archive. After that switch radio button to harvester you used.
 2.	Harvest date – should be entered in the format as in example (Example shows time when app was run)
 3.	Seed url – seed url for your web archive.
 4.	Use this filed – should be ticked if you would like to specify user or project in METS
