@@ -36,10 +36,8 @@ Enter your system record ID number in the corresponding field.
 3. SIP title – this names the SIP folder.
 4. Entity type – you can use small arrows “up” and ”down” to scrall entity types and then click to select and you will pick the appropriate entity type for your submission.
 (New ones can be added. Open the script in an editor. Find this line
-```
 value_list  = ["WebHarvestIE","OneOffIE","AudioIE","PeriodicIE",
-"VideoIE","HTMLSerialIE","HTMLMonoIE","UnpublishedIE",""]
-```
+"VideoIE","HTMLSerialIE","HTMLMonoIE","UnpublishedIE",""]. 
 And add your entity type inside squared brackets, after coma and in quotes, save and it will appear the next time the app is run.
 5. Policy ID – policy rights access code - change to 100, 200,300,400 as required
 6. File or Folder:
