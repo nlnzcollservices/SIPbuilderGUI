@@ -17,7 +17,8 @@ def my_gui(values = None):
 		initial_rights = "200"
 		initial_dc = "My title"
 		initial_sip = "my_sip_name"
-		initial_year = dt.now().strftime("%Y")
+		initial_year = ""
+		# initial_year = dt.now().strftime("%Y")
 		initial_entity = ""
 		initial_alma = ""
 		initial_tiaki = ""
@@ -85,7 +86,7 @@ def main():
 			if event == sg.WIN_CLOSED:
 				break
 			if (values["file_flag"] and values["filename"]=="") or (values["fold_flag"] and values["foldername"]==""):
-				raise IndexError("Please insert imput file source")		
+				raise IndexError("Please insert input file source")		
 			if (values["alma"] and values["alma_mms"]=="") or (values["tiaki"] and values["tiaki_emu"]==""):
 				raise IndexError("Please insert MMS ID or EMU")
 			if (values["output_dir"]==""):
@@ -167,6 +168,7 @@ def main():
 				print(str(ie))
 				print("Values you submitted:")
 				print(values)
+				window.close()
 	window.close()
 
 if __name__ == '__main__':
