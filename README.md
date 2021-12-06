@@ -29,24 +29,27 @@ It will open the submission form.
 
 ### “Main details” tab fields description:
 This data populates the dc and mets.xml files.
-1. Library system:
+1.	Library system:
 The default setting is Alma you can switch the radio button for Tiaki.
 Enter your system record ID number in the corresponding field.
-2. DC title will be displayed in the dc.xml.
-3. SIP title – this names the SIP folder.
-4. Entity type – you can use small arrows “up” and ”down” to scrall entity types and then click to select and you will pick the appropriate entity type for your submission.
-(New ones can be added. Open the script in an editor. Find this line
-value_list  = ["WebHarvestIE","OneOffIE","AudioIE","PeriodicIE",
-"VideoIE","HTMLSerialIE","HTMLMonoIE","UnpublishedIE",""]. 
+2.	DC title:
+ Will be displayed in the dc.xml.
+3.	SIP title:
+Will be displayed as name of your SIP folder.
+4.	Entity type:
+You can use small arrows “up” and ”down” to scrall entity types and then click to select and you will ick the appropriate entity type for your submission.
+(New ones can be added. Open the script in an editor. Find this line value_list  = ["WebHarvestIE","OneOffIE","AudioIE","PeriodicIE",
+"VideoIE","HTMLSerialIE","HTMLMonoIE","UnpublishedIE",""]
 And add your entity type inside squared brackets, after coma and in quotes, save and it will appear the next time the app is run.
-5. Policy ID – policy rights access code - change to 100, 200,300,400 as required
-6. File or Folder:
-- If  your SIP will have one file use “Single file” radio button and select your file using the “FileBrowse” button
-- If your SIP will have multiple files in a folder switch the radio button to “folder” and use  “FolderBrowse” button to select the folder
-7. Output folder:
+5.	Policy ID:
+Policy rights access code - change to 100, 200,300,400 as required
+6.	 File or Folder:
+If  your SIP will have one file use “Single file” radio button and select your file using the “FileBrowse” button
+If your SIP will have multiple files in a folder switch the radio button to “folder” and use  “FolderBrowse” button to select the folder
+7.	Output folder:
 Use the “FolderBrowse” button to select the folder where you want your SIP to be built.
-8. Designation fields, for serial publications – It you are creating a one-time IEs or a web archives these field can be empty and will be ignored.
-
+8.	Designation field:
+Used for serial publications – It you are creating a one-time IEs or a web archives these field can be empty and will be ignored.
 
 
 
