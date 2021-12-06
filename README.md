@@ -25,7 +25,7 @@ pip install -r requirements.txt
 To run the app just go to  the “script” folder and run the “SIP_GUI.py” script
 It will open the submission form.
 
-![SIP_builder1](/documentation/SIP_builder1.PNG)
+![SIP_builder1](/documentation/SIP_builder2.PNG)
 
 
 
