@@ -49,10 +49,28 @@ If your SIP will have multiple files in a folder switch the radio button to “f
 7.	Output folder:
 Use the “FolderBrowse” button to select the folder where you want your SIP to be built.
 8.	Designation field:
-Used for serial publications – It you are creating a one-time IEs or a web archives these field can be empty and will be ignored.
+Used for non web-archive publications – It you are creating a one-time IEs or a web archives these field can be empty and will be ignored.
 
 
+![SIP_builder1](/documentation/SIP_builder1.PNG)
 
-## Errors and notes
+### “Web and User” tab fields description:
+Used for building SIPs for Web archives or specifying the user or project name in METS.  
+1.	Web Archive – should be ticked! if you building a SIP for a web archive
+2.	Harvest date – should be entered in the format as in example (Example shows time when app was run)
+3.	Seed url – seed url for your web archive.
+4.	Use this filed – should be ticked if you would like to specify user or project in METS
+5.	If it is ticked please switch the radio button to your option and enter your username or project name in corresponding text field.
+Check the form before pressing the “submit” button. From either tabs  the window will disappear and script will give you the message “SIP was created in ”   and show the folder with your SIP.
+Check the mets.xml file for metadata you entered and when the SIP is ready:
+-	Place it to a Rosetta automated folder for production.
+-	Or to the Rosetta UAT folder and contact the PRC team to arrange the Rosetta ingest job.
+Done!
+## 	Errors and notes:
 ***
+ - Object identifier, entity type, input (either file or folder) and output folder are mandatory.
+If you miss one of them the script will not build SIP and give you a message.
+ - Object identifier, entity type, sip title, DC title, policy id will be kept the same for next submission while the window is open. However, path to source and output should be chosen again.
+
+
 
