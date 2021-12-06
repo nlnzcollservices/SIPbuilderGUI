@@ -21,13 +21,15 @@ pip install -r requirements.txt
 
 ## Deploying
 ***
+### Start
 
 To run the app just go to  the “script” folder and run the “SIP_GUI.py” script. 
 It will open the submission form.
 
+### “Main details” tab fields description:
+
 ![SIP_builder1](/documentation/SIP_builder1.PNG)
 
-### “Main details” tab fields description:
 This data populates the dc and mets.xml files.
 1.	Library system:
 The default setting is Alma you can switch the radio button for Tiaki.
@@ -62,6 +64,8 @@ Used for building SIPs for Web archives or specifying the user or project name i
 3.	Seed url – seed url for your web archive.
 4.	Use this filed – should be ticked if you would like to specify user or project in METS
 5.	If it is ticked please switch the radio button to your option and enter your username or project name in corresponding text field.
+
+### Finish
 
 Check the form before pressing the “submit” button. From either tabs  the window will disappear and script will give you the message “SIP was created in ”   and show the folder with your SIP.
 Check the mets.xml file for metadata you entered and when the SIP is ready:
