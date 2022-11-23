@@ -142,7 +142,7 @@ def main():
 					if username:
 							general_ie_chars[0]["UserDefinedB"]=username
 					elif projectname:
-							general_ie_chars[0]["UserDefinedB"]=projectname
+							general_ie_chars[0]["UserDefinedA"]=projectname
 				kwargs = {  'ie_dmd_dict':ie_dc_dict, 
 							'generalIECharacteristics':general_ie_chars,
 							'accessRightsPolicy':[{'policyId': access}],
